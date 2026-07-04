@@ -10,6 +10,7 @@ Requirements:
 - left, center, and right sections
 - left section contains sidebar toggle button
 - use `PanelLeftOpen` / `PanelLeftClose` icons based on sidebar state
+
 - right section stays empty for now
 - dark background with subtle bottom border
 

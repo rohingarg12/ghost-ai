@@ -1,5 +1,6 @@
 "use client";
 
+import { UserButton } from "@clerk/nextjs";
 import { PanelLeftClose, PanelLeftOpen } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -45,8 +46,10 @@ export function EditorNavbar({
       {/* Center — empty for now */}
       <div className="flex items-center gap-2 justify-self-center" />
 
-      {/* Right — empty for now */}
-      <div className="flex items-center gap-2 justify-self-end" />
+      {/* Right — user profile settings and logout (Clerk default menu) */}
+      <div className="flex items-center gap-2 justify-self-end">
+        <UserButton />
+      </div>
     </header>
   );
 }
